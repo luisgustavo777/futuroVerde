@@ -1,18 +1,13 @@
+/*Coloca a margem e bordas de todos os elementos*/
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Define o comportamento do scroll*/
 html {
     scroll-behavior: smooth;
 }
-
-.sofadi-one-regular {
-    font-family: "Sofadi One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-
+/*Comportamento e posição do cabeçalho*/
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -20,14 +15,14 @@ html {
     background-color: green;
     font-family: Sofadi One;
 }
-
+/*Posicionamento e tamanho da lista*/
 .cabecalho ul {
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
     gap: 10vh;
 }
-
+/*Caracteristicas e Posicionamento de cada botão*/
 .cabecalho a {
     text-decoration: none;
     background-color: rgb(104, 157, 24);
@@ -36,7 +31,106 @@ html {
     color: black;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
+/*Movimento do botão*/
 .cabecalho a:hover {
     color: white;
+}
+/*Seção de contato*/
+.secao-contato {
+    max-width: 600px;
+    margin: 10vh auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/*Titulo da seção*/
+.secao-contato h2 {
+    font-size: 28px;
+    font-family: Oswald;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+/*Texto de menor tamanho da seção*/
+.secao-contato p {
+    font-size: 18px;
+    color: #555;
+    font-family: Oswald;
+    margin-bottom: 20px;
+}
+/*Contatos para interação*/
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+/*Cada item individualmente*/
+.contato-item {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 20px;
+    font-family: Oswald;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*Efeito ao colocar o mouse em cima*/
+.contato-item:hover {
+    background-color: #218838;
+}
+/*Cada tipo de contato*/
+.contato-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+/*Responsividade da parte de contatos em telas menores*/
+@media (max-width: 600px) {
+    .secao-contato {
+        padding: 20px;
+    }
+    .contato-item {
+        font-size: 16px;
+    }
+    .contato-item i {
+        font-size: 20px;
+    }
+}
+/*Rodapé e suas caracteristicas*/
+.footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 5px solid #A5D6A7;
+}
+/*Elementos P do rodapé*/
+.footer p {
+    margin: 10px 0;
+    font-family: Sofadi One;
+}
+/*Elementos de A HREF do rodapé*/
+.footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/*Efeito de transição de corpara os links no rodapé*/
+.footer a:hover {
+    color: #FFC107;
+}
+/*Media Query para responsividade em dispositivos menores*/
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+    }
 }
