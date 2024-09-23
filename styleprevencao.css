@@ -1,18 +1,13 @@
+/*Coloca a margem e bordas de todos os elementos*/
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Define o comportamento do scroll*/
 html {
     scroll-behavior: smooth;
 }
-
-.sofadi-one-regular {
-    font-family: "Sofadi One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-
+/*Comportamento e posição do cabeçalho*/
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -20,14 +15,14 @@ html {
     background-color: green;
     font-family: Sofadi One;
 }
-
+/*Posicionamento e tamanho da lista*/
 .cabecalho ul {
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
     gap: 10vh;
 }
-
+/*Caracteristicas e Posicionamento de cada botão*/
 .cabecalho a {
     text-decoration: none;
     background-color: rgb(104, 157, 24);
@@ -36,7 +31,109 @@ html {
     color: black;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
+/*Movimento do botão*/
 .cabecalho a:hover {
     color: white;
+}
+/*Seção de dicas*/
+.secao-dicas {
+    background-color: #e9f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 50vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*Título da seção*/
+.secao-dicas h2 {
+    color: #388e3c;
+    font-family: Oswald;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*Parágrafo inicial*/
+.secao-dicas p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Oswald;
+    margin-bottom: 20px;
+}
+
+/*Lista de dicas*/
+.dicas-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+/*Cada item da lista de discas*/
+.dicas-lista li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+/*Seção de ONGs*/
+.ongs {
+    margin-top: 30px;
+}
+/*Titulo da secção de ongs*/
+.ongs h3 {
+    color: #388e3c;
+    font-size: 22px;
+    font-family: Oswald;
+    margin-bottom: 10px;
+}
+/*Lista de ONGs*/
+.ongs-lista {
+    list-style-type: none;
+    padding: 0;
+}
+/*Cada item na lista de ongs*/
+.ongs-lista li {
+    margin-bottom: 10px;
+}
+/*Links das ONGs*/
+.ongs-lista a {
+    color: #0277bd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+/*Efeito ao colocar o mouse em cima*/
+.ongs-lista a:hover {
+    color: #01579b;
+}
+/*Rodapé e suas caracteristicas*/
+.footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 5px solid #A5D6A7;
+}
+/*Elementos P do rodapé*/
+.footer p {
+    margin: 10px 0;
+    font-family: Sofadi One;
+}
+/*Elementos de A HREF do rodapé*/
+.footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/*Efeito de transição de corpara os links no rodapé*/
+.footer a:hover {
+    color: #FFC107;
+}
+/*Media Query para responsividade em dispositivos menores*/
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+    }
 }
