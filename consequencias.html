@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consequências de Queimada</title>
+    <!-- Referência ao CSS da página-->
     <link rel="stylesheet" href="styleconsequencias.css">
+    <!-- Favicon da página-->
     <link rel="shortcut icon" href="faviconQueimadas.ico" type="image/x-icon">
+    <!-- Fonte Sofadi One-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <!-- Fonte Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cabeçalho com sub-páginas do site-->
     <header class="cabecalho">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,6 +29,38 @@
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </header>
-    
+    <div class="container">
+        <!-- Gráfico de Pizza -->
+        <div class="grafico-pizza">
+            <div class="pizza"></div>
+            <ul class="legenda">
+                <li><span class="cor" style="background-color: #d9534f;"></span> Fauna e Flora (30%)</li>
+                <li><span class="cor" style="background-color: #f0ad4e;"></span> Gases Poluentes (25%)</li>
+                <li><span class="cor" style="background-color: #5bc0de;"></span> Biodiversidade (20%)</li>
+                <li><span class="cor" style="background-color: #5cb85c;"></span> Clima (10%)</li>
+                <li><span class="cor" style="background-color: #0275d8;"></span> Erosão (10%)</li>
+                <li><span class="cor" style="background-color: #292b2c;"></span> Saúde (5%)</li>
+            </ul>
+        </div>
+        <!-- Lista de consequências -->
+        <div class="conteudo">
+            <h1>Principais Consequências das Queimadas</h1>
+            <ul class="consequencias">
+                <li data-cor="#d9534f">Destruição da fauna e flora</li>
+                <li data-cor="#f0ad4e">Aumento da emissão de gases poluentes</li>
+                <li data-cor="#5bc0de">Perda de biodiversidade</li>
+                <li data-cor="#5cb85c">Desequilíbrio climático</li>
+                <li data-cor="#0275d8">Erosão do solo</li>
+                <li data-cor="#292b2c">Impactos na saúde humana</li>
+            </ul>
+        </div>
+    </div>
+     <!-- Cabeçalho com contato e outras duas páginas para acesso-->
+     <footer class="footer">
+        <p>Junte-se a nós na luta pela preservação do meio ambiente. Pequenas ações diárias podem fazer uma grande diferença. Reduza, reutilize e recicle!</p>
+        <p>© 2024 Futuro Verde. Todos os direitos reservados. Confira nosso <a href="contato.html">Contato</a> e <a href="index.html">Home</a>.</p>
+        <p>Para mais informações sobre nossas iniciativas ambientais, entre em contato: <a href="mailto:contatoluisbp@gmail.com">contatoluisbp@gmail.com</a> | +55 (24) 992151385</p>
+        <p>Siga-nos nas redes sociais: <a href="https://github.com/luisgustavo777">GitHub</a> , <a href="https://www.linkedin.com/in/lu%C3%ADs-gustavo-moreira-928967262/">LinkedIn</a> , <a href="https://www.instagram.com/luismds_/">Instagram</a></p>
+    </footer>
 </body>
 </html>

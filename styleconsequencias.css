@@ -1,18 +1,13 @@
+/*Coloca a margem e bordas de todos os elementos*/
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Define o comportamento do scroll*/
 html {
     scroll-behavior: smooth;
 }
-
-.sofadi-one-regular {
-    font-family: "Sofadi One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-
+/*Comportamento e posição do cabeçalho*/
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -20,14 +15,14 @@ html {
     background-color: green;
     font-family: Sofadi One;
 }
-
+/*Posicionamento e tamanho da lista*/
 .cabecalho ul {
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
     gap: 10vh;
 }
-
+/*Caracteristicas e Posicionamento de cada botão*/
 .cabecalho a {
     text-decoration: none;
     background-color: rgb(104, 157, 24);
@@ -36,7 +31,135 @@ html {
     color: black;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
+/*Movimento do botão*/
 .cabecalho a:hover {
     color: white;
+}
+/*Div para colocar a lista de consequências e o gráfico*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 10vh;
+}
+/*Conteúdo da lista*/
+.conteudo {
+    width: 50%;
+}
+/*Título*/
+h1 {
+    color: green;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1vh;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Oswald;
+}
+/*Estilo da lista de consequências*/
+ul.consequencias {
+    list-style-type: none;
+    padding: 0;
+}
+/*Caracteristicas de cada item da lista*/
+ul.consequencias li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Oswald;
+}
+/*Animação de piscar*/
+@keyframes blink {
+    0%, 100% {
+        background-color: inherit;
+    }
+    50% {
+        background-color: var(--hover-cor);
+        color: #fff;
+    }
+}
+/*Efeito ao passar o mouse*/
+ul.consequencias li:hover {
+    animation: blink 0.6s ease-in-out;
+    --hover-cor: attr(data-cor);
+}
+/*Gráfico de Pizza*/
+.grafico-pizza {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilo do gráfico de pizza*/
+.pizza {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #d9534f 0% 30%, 
+        #f0ad4e 30% 55%, 
+        #5bc0de 55% 75%, 
+        #5cb85c 75% 85%, 
+        #0275d8 85% 95%, 
+        #292b2c 95% 100%
+    );
+    margin-bottom: 20px;
+}
+/*Estilo da legenda*/
+.legenda {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+/*Posicionamento de cada item da legenda do gráfico*/
+.legenda li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: Oswald;
+}
+/*Tamanho das fatias*/
+.legenda .cor {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+/*Rodapé e suas caracteristicas*/
+.footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 5px solid #A5D6A7;
+}
+/*Elementos P do rodapé*/
+.footer p {
+    margin: 10px 0;
+    font-family: Sofadi One;
+}
+/*Elementos de A HREF do rodapé*/
+.footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/*Efeito de transição de corpara os links no rodapé*/
+.footer a:hover {
+    color: #FFC107;
+}
+/*Media Query para responsividade em dispositivos menores*/
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+    }
 }
