@@ -34,4 +34,9 @@ html {
     padding: 1vh;
     border-radius: 1vh;
     color: black;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cabecalho a:hover {
+    color: white;
 }

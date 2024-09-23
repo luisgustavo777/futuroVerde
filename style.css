@@ -1,18 +1,13 @@
+/*Coloca a margem e bordas de todos os elementos*/
 * {
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Define o comportamento do scroll*/
 html {
     scroll-behavior: smooth;
 }
-
-.sofadi-one-regular {
-    font-family: "Sofadi One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-
+/*Comportamento e posição do cabeçalho*/
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -20,18 +15,140 @@ html {
     background-color: green;
     font-family: Sofadi One;
 }
-
+/*Posicionamento e tamanho da lista*/
 .cabecalho ul {
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
     gap: 10vh;
 }
-
+/*Caracteristicas e Posicionamento de cada botão*/
 .cabecalho a {
     text-decoration: none;
     background-color: rgb(104, 157, 24);
     padding: 1vh;
     border-radius: 1vh;
     color: black;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/*Movimento do botão*/
+.cabecalho a:hover {
+    color: white;
+}
+/*Div da pergunta inicial em cima da foto*/
+.oquesao {
+    position: relative;
+    display: inline-block;
+}
+/*Foto inicial e seu efeito de transição*/
+.oquesao img {
+    filter: grayscale(100%);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-in-out, filter 1s ease-in-out;
+}
+/*Foto ganhando cor lentamente*/
+.oquesao img:hover {
+    filter: grayscale(0%)
+}
+/*Pergunta em H1*/
+.oquesao h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6vh;
+    font-family: Oswald;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+    padding: 1vh 2vh;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/*Efeito de transição de cor no H1*/
+.oquesao:hover h1 {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: rgb(104, 157, 24);
+}
+/*Div para fotos e definições*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/*Div da definição de queimada*/
+.definicao {
+    max-width: 700px;
+    margin: 20px; 
+    padding: 20px;
+    border-radius: 15px; 
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 3vh; 
+    line-height: 1.5; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+/*Texto definindo queimada*/
+.definicao p {
+    background-color: rgb(104, 157, 24);
+    font-family: Oswald;
+    margin: 0;
+    padding: 2vh;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/*Div para as 4 fotos de queimadas*/
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    margin: 20px; 
+}
+/*Cada foto da queimada individualmente*/
+.grid img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/*Efeito para as imagens de cima*/
+.grid .imgemcima:hover {
+    transform: translate(-50%, -10%) scale(1.6);
+}
+/*Efeito para as imagens de baixo*/
+.grid .imgembaixo:hover {
+    transform: translate(-50%, -50%) scale(1.6);
+}
+/*Rodapé e suas caracteristicas*/
+.footer {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 5px solid #A5D6A7;
+}
+/*Elementos P do rodapé*/
+.footer p {
+    margin: 10px 0;
+    font-family: Sofadi One;
+}
+/*Elementos de A HREF do rodapé*/
+.footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/*Efeito de transição de corpara os links no rodapé*/
+.footer a:hover {
+    color: #FFC107;
+}
+/*Media Query para responsividade em dispositivos menores*/
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+    }
 }
