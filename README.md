@@ -18,8 +18,8 @@
 •Eu também fiz um favicon chamado **/faviconQueimadas.ico** para fazer uma página mais completa.<br>
 
 **<h1>Responsividade</h1>**
-•A responsividade do site não é muita boa (na verdade quase não tem nenhuma) pois a minha maior dificuldade tem sido em fazer os **mediaQuerys** funcionarem corretamente de forma concisa e organizada.
-•Como o meu projeto se trata de várias classes eu acabei não tendo tempo para colocar os mesmos **mediaQuerys** em todas os arquivos, tenho duvidas quanto a possibilidade de generalização deste elemento.
+•A responsividade do site não é muita boa (na verdade quase não tem nenhuma) pois a minha maior dificuldade tem sido em fazer os **mediaQuerys** funcionarem corretamente de forma concisa e organizada. <br>
+•Como o meu projeto se trata de várias classes eu acabei não tendo tempo para colocar os mesmos **mediaQuerys** em todas os arquivos, tenho duvidas quanto a possibilidade de generalização deste elemento dentro do projeto.
 
 **<h1>Imagens</h1>**
 •Tela inicial
@@ -39,7 +39,7 @@
 ![Captura de tela 2024-09-23 202514](https://github.com/user-attachments/assets/e82ef637-269a-494f-9e13-5d23ece84e71)
 
 •Secção de Contatos
-![Captura de tela 2024-09-23 202519](https://github.com/user-attachments/assets/5b8c6e3d-e836-484b-8de2-7342bcbaa6df
+![image](https://github.com/user-attachments/assets/34cd272c-ec0f-4b70-b4ec-f48179d3e546)
 
 **<h1>Disclaimer</h1>**
-• This web page was made on Mozilla Firefox, this page wasn't have responsible.
+• This web page was made on Mozilla Firefox, this page is not yet responsive :C.
